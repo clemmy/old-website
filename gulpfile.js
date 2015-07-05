@@ -25,6 +25,7 @@ gulp.task('sass', function() {
 gulp.task('css', function() {
     return gulp.src([
         './bower_components/bootstrap/dist/css/bootstrap.css',
+        './bower_components/vegas/dist/vegas.css',
         './css/main.css'
     ])
     .pipe(concat('all.css'))
@@ -35,11 +36,13 @@ gulp.task('css', function() {
 });
 
 //concatenate vendor and custom js, and uglify
-gulp.task('scripts', function() {
-    return gulp.src('js/*.js')
+gulp.task('js', function() {
+    return gulp.src([
+            'bower_components/jquery/dist/jquery.js',
+            'bower_components/vegas/dist/vegas.js',
+            'js/*.js'
+        ])
         .pipe(concat('all.js'))
-        .pipe(gulp.dest('dist'))
-        .pipe(rename('all.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('dist'));
 });
@@ -47,8 +50,9 @@ gulp.task('scripts', function() {
 //copies index.html and other goodies to dist folder
 gulp.task('copy', function() {
     return gulp.src([
-        'index.html'
-    ])
+        'index.html',
+        'images/*'
+    ], {base: './'})
     .pipe(gulp.dest('dist'));
 });
 

@@ -7,6 +7,7 @@ var rename = require('gulp-rename');
 var minifyCss = require('gulp-minify-css');
 var sourcemaps = require('gulp-sourcemaps');
 var del = require('del');
+var ghPages = require('gulp-gh-pages');
 
 gulp.task('lint', function() {
     return gulp.src('js/*.js')
@@ -62,6 +63,13 @@ gulp.task('clean', function(cb) {
         'dist/',
         'css/'
     ], cb);
+});
+
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages({
+        branch: 'master'
+    }));
 });
 
 // gulp.task('watch', function() {

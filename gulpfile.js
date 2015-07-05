@@ -42,7 +42,10 @@ gulp.task('scripts', function() {
 
 //copies index.html and other goodies to dist folder
 gulp.task('copy', function() {
-
+    return gulp.src([
+        'index.html'
+    ])
+    .pipe(gulp.dest('dist'));
 });
 
 // gulp.task('watch', function() {

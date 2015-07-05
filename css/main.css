@@ -1,2 +1,6 @@
 .test {
   font-family: "Droid Sans", sans-serif; }
+
+.vegas-overlay {
+  background-color: #418068;
+  opacity: 0.6; }

@@ -51,7 +51,8 @@ gulp.task('js', function() {
 gulp.task('copy', function() {
     return gulp.src([
         'index.html',
-        'images/*'
+        'images/*',
+        'overlay.png'
     ], {base: './'})
     .pipe(gulp.dest('dist'));
 });

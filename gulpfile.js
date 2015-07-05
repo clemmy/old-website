@@ -6,6 +6,7 @@ var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var minifyCss = require('gulp-minify-css');
 var sourcemaps = require('gulp-sourcemaps');
+var del = require('del');
 
 gulp.task('lint', function() {
     return gulp.src('js/*.js')
@@ -23,8 +24,8 @@ gulp.task('sass', function() {
 //concatenate vendor and custom css, and minify
 gulp.task('css', function() {
     return gulp.src([
-        'bower_components/bootstrap/dist/css/bootstrap.css',
-        'css/main.css'
+        './bower_components/bootstrap/dist/css/bootstrap.css',
+        './css/main.css'
     ])
     .pipe(concat('all.css'))
     .pipe(sourcemaps.init())
@@ -49,6 +50,13 @@ gulp.task('copy', function() {
         'index.html'
     ])
     .pipe(gulp.dest('dist'));
+});
+
+gulp.task('clean', function(cb) {
+    del([
+        'dist/',
+        'css/'
+    ], cb);
 });
 
 // gulp.task('watch', function() {

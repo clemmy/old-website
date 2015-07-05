@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "author": "Clement Hoang",
   "devDependencies": {
+    "del": "^1.2.0",
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
     "gulp-jshint": "^1.11.0",

@@ -5,6 +5,7 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var minifyCss = require('gulp-minify-css');
+var sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('lint', function() {
     return gulp.src('js/*.js')
@@ -26,7 +27,9 @@ gulp.task('css', function() {
         'css/main.css'
     ])
     .pipe(concat('all.css'))
+    .pipe(sourcemaps.init())
     .pipe(minifyCss())
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest('dist'));
 });
 

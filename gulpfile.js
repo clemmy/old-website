@@ -53,7 +53,8 @@ gulp.task('copy', function() {
     return gulp.src([
         'index.html',
         'images/*',
-        'overlay.png'
+        'overlay.png',
+        'CNAME'
     ], {base: './'})
     .pipe(gulp.dest('dist'));
 });

@@ -54,7 +54,8 @@ gulp.task('copy', function() {
         'index.html',
         'images/*',
         'overlay.png',
-        'CNAME'
+        'CNAME',
+        'favicon.ico'
     ], {base: './'})
     .pipe(gulp.dest('dist'));
 });

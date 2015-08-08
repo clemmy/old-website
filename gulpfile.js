@@ -41,6 +41,7 @@ gulp.task('js', function() {
     return gulp.src([
             'bower_components/jquery/dist/jquery.js',
             'bower_components/vegas/dist/vegas.js',
+            'bower_components/typed.js/js/typed.js',
             'js/*.js'
         ])
         .pipe(concat('all.js'))

@@ -1,5 +1,11 @@
-.test {
+.heading {
     font-family: $base-font-stack;
+    color: white;
+    font-size: 60px;
+}
+
+.container {
+    text-align: center;
 }
 
 .vegas-overlay {

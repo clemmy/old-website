@@ -5,10 +5,12 @@ $(function() {
             { src: 'images/bg2.jpg' },
             { src: 'images/bg3.jpg' }
         ],
-        transition: 'fade',
-        transitionDuration: 4250,
+        transition: 'blur',
+        transitionDuration: 3750,
+        delay: 6250,
         overlay: 'overlay.png',
-        timer: false
+        timer: false,
+        shuffle: true
     });
 });
 

@@ -1,10 +1,9 @@
 $(function() {
     $('body').vegas({
         slides: [
-            { src: 'images/test.jpg'},
-            { src: 'images/smash.jpg' },
-            { src: 'images/chatime.jpg' },
-            { src: 'images/google.jpg' }
+            { src: 'images/bg1.jpg'},
+            { src: 'images/bg2.jpg' },
+            { src: 'images/bg3.jpg' }
         ],
         transition: 'fade',
         transitionDuration: 3000,

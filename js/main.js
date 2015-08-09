@@ -6,8 +6,9 @@ $(function() {
             { src: 'images/bg3.jpg' }
         ],
         transition: 'fade',
-        transitionDuration: 3000,
-        overlay: 'overlay.png'
+        transitionDuration: 4250,
+        overlay: 'overlay.png',
+        timer: false
     });
 });
 
@@ -15,6 +16,6 @@ $(function(){
     $(".heading").typed({
         strings: ["Hey there,", "good lookin'", ";)"],
         typeSpeed: 0,
-        loop: true,
+        loop: true
     });
 });

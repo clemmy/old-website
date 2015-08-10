@@ -14,10 +14,10 @@ $(function() {
     });
 });
 
-$(function(){
-    $(".heading").typed({
-        strings: ["Hey there,", "good lookin'", ";)"],
-        typeSpeed: 0,
-        loop: true
-    });
-});
+// $(function(){
+//     $(".heading").typed({
+//         strings: ["Hey there,", "good lookin'", ";)"],
+//         typeSpeed: 0,
+//         loop: true
+//     });
+// });

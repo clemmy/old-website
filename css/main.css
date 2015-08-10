@@ -54,11 +54,25 @@ body {
   font-family: "Courier", serif;
   color: white;
   font-size: 48px;
-  margin-left: 2%; }
+  margin-left: 2%;
+  margin-top: -2%; }
 
-.social-links i {
-  color: white;
-  font-size: 38px; }
+.social-links {
+  list-style: none;
+  margin-left: -4%;
+  margin-top: 1.5%; }
+  .social-links li {
+    display: inline-block;
+    margin: 12px;
+    text-align: center; }
+  .social-links a {
+    display: block;
+    padding: 10px;
+    border-radius: 100%;
+    border: 3px solid white; }
+  .social-links i {
+    color: white;
+    width: 1.25em; }
 
 .vegas-overlay {
   background-color: #418068;

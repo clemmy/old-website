@@ -28,12 +28,28 @@ body {
     color: white;
     font-size: 48px;
     margin-left: 2%;
+    margin-top: -2%;
 }
 
 .social-links {
+    list-style: none;
+    margin-left: -4%;
+    margin-top: 1.5%;
+    li {
+        display: inline-block;
+        margin: 12px;
+        text-align: center;
+    }
+    a {
+        // background: black;
+        display: block;
+        padding: 10px;
+        border-radius: 100%;
+        border: 3px solid white;
+    }
     i {
         color: white;
-        font-size: 38px;
+        width: 1.25em;
     }
 }
 

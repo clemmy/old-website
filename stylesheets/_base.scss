@@ -1,11 +1,40 @@
-.heading {
-    font-family: $base-font-stack;
-    color: white;
-    font-size: 60px;
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    overflow: hidden;
 }
 
 .container {
-    text-align: center;
+    height: 100%;
+    overflow: hidden;
+}
+
+.header-container {
+    position: absolute;
+    top: 40%;
+}
+
+.heading {
+    font-family: $base-font-stack;
+    color: white;
+    font-size: 108px;
+}
+
+.description {
+    font-family: $secondary-font-stack;
+    color: white;
+    font-size: 48px;
+    margin-left: 2%;
+}
+
+.social-links {
+    i {
+        color: white;
+        font-size: 38px;
+    }
 }
 
 .vegas-overlay {

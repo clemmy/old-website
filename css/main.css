@@ -30,13 +30,35 @@
   100% {
     opacity: 1; } }
 
-.heading {
-  font-family: "Droid Sans", sans-serif;
-  color: white;
-  font-size: 60px; }
+html {
+  height: 100%; }
+
+body {
+  height: 100%;
+  overflow: hidden; }
 
 .container {
-  text-align: center; }
+  height: 100%;
+  overflow: hidden; }
+
+.header-container {
+  position: absolute;
+  top: 40%; }
+
+.heading {
+  font-family: "Raleway", sans-serif;
+  color: white;
+  font-size: 108px; }
+
+.description {
+  font-family: "Courier", serif;
+  color: white;
+  font-size: 48px;
+  margin-left: 2%; }
+
+.social-links i {
+  color: white;
+  font-size: 38px; }
 
 .vegas-overlay {
   background-color: #418068;

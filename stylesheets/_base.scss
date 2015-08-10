@@ -53,6 +53,15 @@ body {
     }
 }
 
+footer {
+    position: absolute;
+    bottom: 3px;
+    right: 4px;
+    font-family: $base-font-stack;
+    color: white;
+    font-size: 1em;
+}
+
 .vegas-overlay {
     background-color: #418068;
     opacity: 0.6;

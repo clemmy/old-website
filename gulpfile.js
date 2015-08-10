@@ -15,25 +15,15 @@ gulp.task('lint', function() {
         .pipe(jshint.reporter('default'));
 });
 
-//builds sass files to ./css/
+//builds sass files to ./css/, and minifies
 gulp.task('sass', function() {
     return gulp.src('stylesheets/*.scss')
         .pipe(sass())
-        .pipe(gulp.dest('css'));
-});
-
-//concatenate vendor and custom css, and minify
-gulp.task('css', function() {
-    return gulp.src([
-        './bower_components/bootstrap/dist/css/bootstrap.css',
-        './bower_components/vegas/dist/vegas.css',
-        './css/main.css'
-    ])
-    .pipe(concat('all.css'))
-    .pipe(sourcemaps.init())
-    .pipe(minifyCss())
-    .pipe(sourcemaps.write())
-    .pipe(gulp.dest('dist'));
+        .pipe(rename("all.css"))
+        .pipe(sourcemaps.init())
+        .pipe(minifyCss())
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest('dist'));
 });
 
 //concatenate vendor and custom js, and uglify

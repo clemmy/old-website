@@ -46,7 +46,8 @@ gulp.task('copy', function() {
         'images/*',
         'overlay.png',
         'CNAME',
-        'favicon.ico'
+        'favicon.ico',
+        'resume.pdf'
     ], {base: './'})
     .pipe(gulp.dest('dist'));
 });

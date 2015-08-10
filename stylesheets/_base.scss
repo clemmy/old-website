@@ -55,7 +55,13 @@ body {
         text-align: center;
     }
     a {
-        // background: black;
+        &:hover {
+            background: black;
+            border: 3px solid black;
+        }
+        transition: background 0.8s ease;
+        transition: border 0.8s ease;
+
         display: block;
         padding: 10px;
         border-radius: 100%;

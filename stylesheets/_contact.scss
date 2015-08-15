@@ -16,6 +16,8 @@
 	transition: opacity 400ms ease-in;
 
     form {
+        margin: 0 auto;
+        
         .form-control {
             background: transparent;
             font-size: 1.5em;
@@ -37,6 +39,14 @@
                 color: $hover-color;
             }
         }
+
+        @media (min-width: $break-medium) {
+            width: 70%;
+        }
+        @media (min-width: $break-semi-large) {
+            width: 55%;
+        }
+
     }
 
     &:target {

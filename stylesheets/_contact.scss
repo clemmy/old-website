@@ -9,10 +9,20 @@
     pointer-events: none;
     color: white;
     text-align: center;
+    font-family: $secondary-font-stack;
+
+    -webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
 
     form {
         .form-control {
             background: transparent;
+            font-size: 1.5em;
+            color: white;
+            &:focus {
+                border-color: $hover-color;
+            }
         }
 
         .form-group {
@@ -22,17 +32,24 @@
         .btn {
             background: transparent;
             color: white;
+            font-size: 1.5em;
+            &:hover {
+                color: $hover-color;
+            }
         }
     }
 
     &:target {
-        opacity: 0.7;
+        opacity: 0.77;
         pointer-events: auto;
     }
 }
 
 .close-form {
-    font-size: 30px;
+    margin-top: 6px;
+    margin-bottom: -24px;
+    display: block;
+    font-size: 42px;
     color: white;
     &:hover {
         color: $hover-color;

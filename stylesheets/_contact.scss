@@ -17,7 +17,7 @@
 
     form {
         margin: 0 auto;
-        
+
         .form-control {
             background: transparent;
             font-size: 1.5em;
@@ -64,4 +64,9 @@
     &:hover {
         color: $hover-color;
     }
+}
+
+#send-success {
+    margin-top: 5px;
+    font-size: 1.2em;
 }

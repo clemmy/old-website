@@ -3,7 +3,11 @@ $(function() {
         slides: [
             { src: 'images/bg1.jpg'},
             { src: 'images/bg2.jpg' },
-            { src: 'images/bg3.jpg' }
+            { src: 'images/bg3.jpg' },
+            { src: 'images/bg4.jpg' },
+            { src: 'images/bg5.jpg' },
+            { src: 'images/bg6.jpg' },
+            { src: 'images/bg7.jpg' }
         ],
         transition: 'blur',
         transitionDuration: 3750,

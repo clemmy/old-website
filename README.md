@@ -3,7 +3,7 @@ Static site built with jQuery, bootstrap, gulp, and sass, and a contact form pow
 
 ## Installation
 ```npm install``` and ```npm install -g gulp-cli```
-(Tested with Node v7.5.0)
+(Tested with Node v8.4.0)
 
 ## Development
 ```$ gulp```

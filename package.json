@@ -2,6 +2,10 @@
   "name": "clemmy.github.io",
   "version": "0.0.0",
   "author": "Clement Hoang",
+  "scripts": {
+    "gulp": "gulp",
+    "deploy": "gulp deploy"
+  },
   "devDependencies": {
     "del": "^1.2.0",
     "gulp": "^3.9.0",

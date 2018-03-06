@@ -80,10 +80,10 @@ a {
     &:hover {
       background: $secondary-color;
       border: 3px solid $secondary-color;
+      padding: 14px;
+      margin: -4px;
     }
-    transition: background 0.8s ease;
-    transition: border 0.8s ease;
-
+    transition: all 0.1s ease;
     display: block;
     padding: 10px;
     border-radius: 100%;

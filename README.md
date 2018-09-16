@@ -1,12 +1,15 @@
 # clemmy.github.io
+
 Static site built with jQuery, bootstrap, gulp, and sass, and a contact form powered by [formspree.io](http://formspree.io/).
 
 ## Installation
-```npm install``` and ```npm install -g gulp-cli```
-(Tested with Node v8.4.0)
+
+`npm install` (Tested with Node v8.4.0)
 
 ## Development
-```$ gulp```
+
+`$ npm run gulp`
 
 ## Deployment
-```$ gulp deploy```
+
+`$ npm run deploy`

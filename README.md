@@ -18,6 +18,7 @@ npm run dev
 git checkout main
 git reset --hard dev
 npm run build
+# need to remove dist/ from .gitignore as well
 git add -A
 git commit -m "Release"
 git push

@@ -15,5 +15,5 @@ npm run dev
 ## Deployment
 
 ```bash
-./deploy.sh
+npm run deploy
 ```

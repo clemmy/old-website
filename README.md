@@ -15,11 +15,5 @@ npm run dev
 ## Deployment
 
 ```bash
-git checkout main
-git reset --hard dev
-npm run build
-# need to remove dist/ from .gitignore as well
-git add -A
-git commit -m "Release"
-git push
+./deploy.sh
 ```

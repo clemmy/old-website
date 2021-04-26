@@ -12,7 +12,7 @@ cd dist
 # if you are deploying to a custom domain
 echo 'clemmy.ninja' > CNAME
 
-git init
+git init --initial-branch=main
 git add -A
 git commit -m 'deploy'
 

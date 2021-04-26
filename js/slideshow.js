@@ -5,6 +5,7 @@ import bg4 from "../images/bg4.jpg";
 import bg5 from "../images/bg5.jpg";
 import bg6 from "../images/bg6.jpg";
 import bg7 from "../images/bg7.jpg";
+import overlay from '../images/overlay.png'
 
 $(function () {
   $("body").vegas({
@@ -20,7 +21,7 @@ $(function () {
     transition: "blur",
     transitionDuration: 3750,
     delay: 6250,
-    overlay: "overlay.png",
+    overlay,
     timer: false,
     shuffle: true,
   });

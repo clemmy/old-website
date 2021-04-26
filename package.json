@@ -3,20 +3,13 @@
   "version": "0.0.0",
   "author": "Clement Hoang",
   "scripts": {
-    "gulp": "gulp",
-    "deploy": "gulp deploy"
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
   },
   "devDependencies": {
-    "del": "^1.2.0",
-    "gulp": "^3.9.0",
-    "gulp-concat": "^2.6.0",
-    "gulp-gh-pages": "^0.5.2",
-    "gulp-jshint": "^1.11.0",
-    "gulp-minify-css": "^1.2.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.0.3",
-    "gulp-sourcemaps": "^1.5.2",
-    "gulp-uglify": "^1.2.0"
+    "sass": "^1.32.11",
+    "vite": "^2.2.3"
   },
   "dependencies": {
     "gulp-cli": "^2.0.1"

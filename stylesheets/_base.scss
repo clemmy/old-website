@@ -12,6 +12,10 @@ a {
   text-decoration: underline;
 }
 
+::selection {
+  background: $secondary-color;
+}
+
 .site-container {
   height: 100%;
   overflow: hidden;
@@ -115,6 +119,6 @@ footer {
 }
 
 .vegas-overlay {
-  background-color: #30c2f2;
+  background-color: #4e6870;
   opacity: 0.6;
 }

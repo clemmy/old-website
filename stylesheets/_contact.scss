@@ -1,68 +1,66 @@
 #contact-form {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: black;
-    opacity: 0;
-    height: 100%;
-    width: 100%;
-    pointer-events: none;
-    color: white;
-    text-align: center;
-    font-family: $secondary-font-stack;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: black;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  color: white;
+  text-align: center;
+  font-family: $secondary-font-stack;
 
-    -webkit-transition: opacity 400ms ease-in;
-	-moz-transition: opacity 400ms ease-in;
-	transition: opacity 400ms ease-in;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
 
-    form {
-        margin: 0 auto;
+  form {
+    margin: 0 auto;
 
-        .form-control {
-            background: transparent;
-            font-size: 1.5em;
-            color: white;
-            &:focus {
-                border-color: $hover-color;
-            }
-        }
-
-        .btn {
-            background: transparent;
-            color: white;
-            font-size: 1.5em;
-            &:hover {
-                color: $hover-color;
-            }
-        }
-
-        @media (min-width: $break-medium) {
-            width: 70%;
-        }
-        @media (min-width: $break-semi-large) {
-            width: 55%;
-        }
-
+    .form-control {
+      background: transparent;
+      font-size: 1.5em;
+      color: white;
+      &:focus {
+        border-color: $hover-color;
+      }
     }
 
-    &:target {
-        opacity: 1;
-        pointer-events: auto;
+    .btn {
+      background: transparent;
+      color: white;
+      font-size: 1.5em;
+      &:hover {
+        color: $hover-color;
+      }
     }
+
+    @media (min-width: $break-medium) {
+      width: 70%;
+    }
+    @media (min-width: $break-semi-large) {
+      width: 55%;
+    }
+  }
+
+  &:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
 }
 
 .close-form {
-    margin-top: 6px;
-    margin-bottom: -24px;
-    display: block;
-    font-size: 42px;
-    color: white;
-    &:hover {
-        color: $hover-color;
-    }
+  margin-top: 6px;
+  display: block;
+  font-size: 42px;
+  color: white;
+  &:hover {
+    color: $hover-color;
+  }
 }
 
 #send-success {
-    margin-top: 5px;
-    font-size: 1.2em;
+  margin-top: 5px;
+  font-size: 1.2em;
 }

@@ -1,4 +1,5 @@
-import './stylesheets/main.scss'
-// TODO: Refactor ./js/main
-import './js/main'
-import './js/contact'
+import "./js/httpsRedirect";
+import "./js/slideshow";
+import "./js/quotes";
+import "./stylesheets/main.scss";
+import "./js/contact";

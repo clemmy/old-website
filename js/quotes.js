@@ -1,28 +1,3 @@
-var host = "clementhoang.net";
-if (window.location.host === host && window.location.protocol !== "https:") {
-  window.location.protocol = "https:";
-}
-
-$(function () {
-  $("body").vegas({
-    slides: [
-      { src: "images/bg1.jpg" },
-      { src: "images/bg2.jpg" },
-      { src: "images/bg3.jpg" },
-      { src: "images/bg4.jpg" },
-      { src: "images/bg5.jpg" },
-      { src: "images/bg6.jpg" },
-      { src: "images/bg7.jpg" },
-    ],
-    transition: "blur",
-    transitionDuration: 3750,
-    delay: 6250,
-    overlay: "overlay.png",
-    timer: false,
-    shuffle: true,
-  });
-});
-
 $(function () {
   var QUOTES = [
     {

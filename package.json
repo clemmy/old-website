@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "sass": "^1.32.11",
-    "vite": "^2.2.3"
+    "vite": "^2.9.13"
   },
   "dependencies": {
     "gulp-cli": "^2.0.1"
